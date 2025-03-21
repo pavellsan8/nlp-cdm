@@ -21,7 +21,7 @@ pip install -r requirements.txt
 API_KEY=<API_KEY_VALUE>
 
 6. Run project :
-python nlp.py
+python app.py
 
 Notes :
 - Ensure you have Python 3.8 or above installed on your system.
