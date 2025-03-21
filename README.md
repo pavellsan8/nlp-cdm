@@ -4,7 +4,7 @@ How to Run the Project
 Copy and run the following commands step-by-step:
 
 1. Clone the repository : 
-git clone https://github.com/pavellsan8/nlp-cdm.gi
+git clone https://github.com/pavellsan8/nlp-cdm.git
 
 2. Make virtual environment : 
 python -m venv venv
