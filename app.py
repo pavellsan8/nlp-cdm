@@ -2,7 +2,7 @@ import os
 import spacy
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
-from project.diet_log import MealTracker
+from diet_log import MealTracker
 
 load_dotenv()
 nlp = spacy.load("en_core_web_md")
@@ -11,7 +11,7 @@ app = Flask(__name__)
 USDA_API_KEY = os.getenv("API_KEY")
 tracker = MealTracker(nlp, USDA_API_KEY)
 
-@app.route('/process_logs', methods=['POST'])
+@app.route('/process_diet_logs', methods=['POST'])
 def process_logs():
     try:
         data = request.get_json()
